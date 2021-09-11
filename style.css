@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Montserrat:wght@400;500;600&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Lora', serif; */
+body{
+    box-sizing: border-box;
+    margin: 30px 125px;
+    padding: 0;
+    background: rgba(0.2, 0.2, 0.2, 1);
+}
+.text-m{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.text-l{
+    font-family: 'Lora', serif;
+}
+/* for destop mode */
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.navbar{
+    width: 100%;
+    background: rgba(0.2, 0.2, 0.2, 1);
+    color: #fff;
+    z-index: 999;
+}
+.navbar-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 64px;
+}
+.container{
+    padding: 0;
+}
+.menu-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+}
+.menu-items li{
+    list-style: none;
+    color: #fff;
+    transition: 100ms ease-in-out;
+}
+.logo{
+    font-size: 2.5rem;
+    padding-bottom: 16px;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+.navbar a:hover{
+    border-bottom: 2px solid #fff;
+    font-weight: 700;
+}
+.logo button{
+    outline: none;
+    border: 2px solid #fff;
+    background: rgba(0.2, 0.2, 0.2, 1);
+    color: #fff;
+    padding: 5px 9px;
+    cursor: pointer;
+}
+
+
+
+.mid{
+    margin-top: 80px;
+    margin-bottom: 120px;
+    display: grid;
+    color: #fff;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+.content{
+    justify-self: center;
+    align-self: center;
+}
+.content .h1{
+    font-weight: 700;
+    font-size: 48px;
+    margin-top: -100px;
+}
+.content p{
+    margin-top: 35px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.img img{
+    width: 100%;
+    overflow: visible;
+}
+
+.showcase{
+    position: relative;
+}
+.container1{
+    position: absolute;
+    left: 30%;
+    top: 80%;
+    padding: 20px;
+    width: 260px;
+    height: 120px;
+    background: rgba(0.2, 0.2, 0.2, 1);
+}
+.profile{
+    position: relative;
+    z-index: 1;
+}
+.img2 img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.info{
+    position: absolute;
+    top: 0px;
+    left: 60px;
+}
+.info h2, p{
+    margin: 0;
+}
+.info h2{
+    font-weight: 500;
+    font-size: 14px;
+}
+.info p{
+    font-weight: 500;
+    font-size: 12px;
+}
+.sent h1{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media( max-width: 420px ){
+    body{
+        margin: 20px 20px;
+    }
+    .profile{
+        display: block;
+    }
+    .navbar input[type="checkbox"],
+    .navbar .hamburger-lines{
+    display: block;
+    }
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+    
+    .navbar input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 28px;
+        width: 35px;
+        top: 20px;
+        right: 20px;
+        z-index: 20;
+        opacity: 0;
+    }
+    .navbar .hamburger-lines{
+        position: absolute;
+        display: block;
+        height: 28px;
+        width: 35px;
+        top: 10px;
+        right: 20px;
+        z-index: 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .navbar .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #fff;
+    }
+    .navbar .hamburger-lines .line1{
+        /* display: none; */
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .hamburger-lines .line2{
+        
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        /* display: none; */
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .menu-items{
+        overflow: hidden;
+        /* position: absolute; */
+        padding-top: 180px;
+        position: relative;
+        background: rgba(0.2, 0.2, 0.2, 1);
+        height: 100vh;
+        width: 100%;
+        transform: translateY(-150%);
+        display: flex;
+        flex-direction: column;
+        transform-origin: top left;
+        margin-left: -40px;
+        padding-left: 50px;
+        opacity: 12;
+        z-index: 3;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .menu-items li{
+        margin-bottom: 3rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        z-index: 12;
+        text-align: center;
+    }
+    .navbar a:hover{
+        border-bottom: 2px solid #fff;
+        font-weight: 700;
+    }
+    .logo{
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        font-size: 2.8rem;
+    }
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateY(0);
+    }
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(35deg);
+    }
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-35deg);
+    }
+  
+    .menu-items{
+        display: none;
+    }
+    .mid{
+        margin-top: 120px;
+        display: block;
+    }
+    .content{
+        margin-bottom: 20px;
+    }
+    .content .h1{
+        font-size: 35px;
+    }
+    /* .showcase{
+        z-index: 3;
+    } */
+    .img img{
+        width: 100%;
+        position: relative;
+        /* z-index: 3; */
+    }
+    .container1{
+        overflow: initial;
+        position: absolute;
+        top: 85%;
+        left: 25%;
+    
+        display: block;
+        height: 80px;
+        width: 200px;
+        padding: 10px;
+    }
+    .info h2{
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .info p{
+        font-weight: 500;
+        font-size: 10px;
+    }
+    .sent h1{
+        margin-top: 0;
+        font-size: 15px;
+    }
+}

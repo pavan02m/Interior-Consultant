@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+        <!-- <div class="nav">
+            <div class="logo">
+                <button>THIS INTERIOR</button>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="list-item text-m item1">Home</li>
+                    <li class="list-item text-m">Collection</li>
+                    <li class="list-item text-m">About</li>
+                    <li class="list-item text-m">Contact</li>
+                </ul>
+            </div>
+        </div> -->
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <div class="logo">
+                    <button>THIS INTERIOR</button>
+                </div>
+                <input type="checkbox">
+                <div class="hamburger-lines">
+                    <a href="#" class="toggle"></a>
+
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ui class="menu-items">
+                    <li class="text-m"><a href="#showcase">Home</a></li>
+                    <li class="text-m"><a href="#about">Collection</a></li>
+                    <li class="text-m"><a href="#about">About</a></li>
+                    <li class="text-m"><a href="#contact">Contact</a></li>
+                </ui>
+            </div>
+    </nav>  
+    
+    <section class="mid">
+        <div class="content">
+            <p class="text-l h1">Modern interior</p>
+            <p class="tex-m">A full-Service residential & <br>commercial interior design and <br>staging company offering
+                professional organizing & eco-services.</p>
+            <p class="text-m">Read more &#8594;</p>
+        </div>
+        <div class="showcase">
+            <div class="img">
+                <img src="./img/photo1.png">
+            </div>
+            <div class="container1">
+                <div class="profile">
+                    <div class="img2">
+                        <div>
+                            <img src="./img/photo2.png">
+                        </div>
+                        <div class="info">
+                            <h2 class="text-m">Aliza Webber</h2>
+                            <p>Interior designer</p>
+                        </div>
+                    </div>
+                    <div class="sent">
+                        <h1 class="text-l">Designed in 2020 by Aliza Webber </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="end">
+        <div class="footer">
+            <p>created by Pavn02 - devChallenge.io</p>
+        </div>
+    </section>
+
+    <script>
+        const toggle = document.querySelector(".toggle");
+        const nav = document.querySelector(".nav");
+
+        toggle.addEventListener("click", () => {
+        toggle.classList.toggle("active");
+        nav.classList.toggle("toggled");
+        });
+    </script>
+</body>
+
+</html>
+
